@@ -2,7 +2,12 @@
 
 Using Azure Cognitive Services API to identify sentiments within a text.
 
-Runnin the code:
+Tools required:
+
+* Azure CLI
+* Node.js
+
+Running the code:
 
 1. Edit and run `scripts/azure.ps` file with your preferences to create the Azure resources
 2. Copy endpoint and keys (from portal) to the code
