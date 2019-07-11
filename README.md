@@ -8,3 +8,5 @@ Runnin the code:
 2. Copy endpoint and keys (from portal) to the code
 3. `npm install`
 4. `node src/index.js`
+
+The code will log the results in the console.
