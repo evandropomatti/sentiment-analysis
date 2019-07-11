@@ -1,0 +1,22 @@
+{
+  "name": "sentiment-analysis",
+  "version": "1.0.0",
+  "description": "Using Azure Cognitive Services API to identify sentiments within a text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epomatti/sentiment-analysis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epomatti/sentiment-analysis/issues"
+  },
+  "homepage": "https://github.com/epomatti/sentiment-analysis#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}

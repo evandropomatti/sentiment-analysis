@@ -1,0 +1,10 @@
+# Login and setup your default location
+az login -u <username>
+az configure --defaults location=brazilsouth
+
+# Group creation
+$group="happytexts"
+az group create -n $groupName
+
+# Create Text Analystics service with free SKU
+az cognitiveservices account create --kind textanalytics -n happytexts -g $group --sku F0
