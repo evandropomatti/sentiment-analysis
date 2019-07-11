@@ -15,13 +15,13 @@ headers = {
 
 const getFace = (score) => {
     if (score < 0.25) {
-        return '=('
+        return '😢'
     } else if (score <= 0.50) {
-        return '=/'
+        return '😒'
     } else if (score < 0.80) {
-        return '=)'
+        return '😃'
     } else {
-        return '=)'
+        return '😁'
     }
 }
 
