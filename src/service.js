@@ -32,7 +32,7 @@ const logOutput = (err, response, body) => {
         const response = JSON.parse(body);
         const score = response.documents[0].score
         const face = getFace(score)
-        console.log(`${face} score: ${score}`)
+        console.log(`${face}     score: ${score}`)
     }
 }
 
