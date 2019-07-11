@@ -25,7 +25,7 @@ const getFace = (score) => {
     }
 }
 
-function logOutput(err, response, body) {
+const logOutput = (err, response, body) => {
     if (err) {
         console.error(err)
     } else {
@@ -36,7 +36,7 @@ function logOutput(err, response, body) {
     }
 }
 
-function post(inputText, language) {
+const post = (inputText, language) => {
     const body = JSON.stringify({
         "documents": [
             {
@@ -55,7 +55,7 @@ function post(inputText, language) {
     request.post(options, logOutput)
 }
 
-function detectSentiment() {
+const detectSentiment = () => {
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout
