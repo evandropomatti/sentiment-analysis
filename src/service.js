@@ -1,12 +1,11 @@
 const request = require('request');
 const readline = require('readline');
 
-const endpoint = 'https://brazilsouth.api.cognitive.microsoft.com/text/analytics/v2.1'
-const language = 'en'
+require('dotenv').config()
 
-// You need to input your own keys
-const key1 = '664b4d4e309848929cdd419d869f95aa'
-const key2 = '56a76e1d661f43879b00c21907203b22'
+const endpoint = `${process.env.AZURE_COGNITIVE_SERVICES_ENDPOINT}/text/analytics/v2.1`
+const language = 'en'
+const key1 = process.env.AZURE_KEY_1
 
 headers = {
     'Ocp-Apim-Subscription-Key': key1,

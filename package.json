@@ -10,7 +10,8 @@
   "license": "ISC",
   "repository": {},
   "dependencies": {
-    "request": "^2.88.0"
+    "request": "latest",
+    "dotenv": "latest"
   },
   "devDependencies": {
     "chai": "^4.2.0", 

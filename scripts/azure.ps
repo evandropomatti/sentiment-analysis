@@ -1,13 +1,12 @@
-# Login and setup your default location
 az login -u <username>
-az configure --defaults location=brazilsouth
 
-# Group creation
-$group="happytexts"
-az group create -n $group
+# Set common arguments
+$location="<location>"
+$group="<group>"
 
-# Create Text Analystics service with free SKU
-az cognitiveservices account create --kind textanalytics -n happytexts -g $group --sku F0
+# Create resources
+az group create -l $location -n $group
+az cognitiveservices account create --kind textanalytics -n <resource_name> -l $location -g $group --sku F0
 
-# Get the endpoint, change the position accordingly
+# Get the endpoint
 az cognitiveservices account list --query [0].endpoint -o tsv
